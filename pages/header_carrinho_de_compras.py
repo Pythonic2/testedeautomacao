@@ -1,5 +1,7 @@
 from browser import ChromeAuto
-from time import sleep
+from utils import Utiuls
+
+utils = Utiuls()
 
 
 class HeaderPageElements(object):
@@ -8,6 +10,5 @@ class HeaderPageElements(object):
 
 class CarrinhoCompas(ChromeAuto):
     def clicar_carrinho_compras(self):
-        sleep(2)
+        utils.espera('shopping_cart_link')
         self.chrome.find_element_by_css_selector(HeaderPageElements.CARRINHO_COMPRAS).click()
-

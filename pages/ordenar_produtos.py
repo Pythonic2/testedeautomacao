@@ -1,5 +1,5 @@
 from browser import ChromeAuto
-from time import sleep
+
 
 class PageElementsOrdenarProdutos(object):
     ELEMENTO_SELECT = '.product_sort_container'
@@ -11,5 +11,4 @@ class OrdenarProdutos(ChromeAuto):
     def ordenar_produtos_low_to_high(self):
         self.chrome.find_element_by_css_selector(PageElementsOrdenarProdutos.ELEMENTO_SELECT).click()
         self.chrome.find_element_by_xpath(PageElementsOrdenarProdutos.OPTION_LOW_TO_HIGH).click()
-
 

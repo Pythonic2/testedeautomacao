@@ -1,5 +1,9 @@
 from selenium import webdriver
 
+
 class ChromeAuto:
-    chrome = webdriver.Chrome()
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    chrome = webdriver.Chrome(options=options)
+
     chrome.maximize_window()
