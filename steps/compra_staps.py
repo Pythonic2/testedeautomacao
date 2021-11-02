@@ -20,6 +20,7 @@ suas_informacoes_checkout = CheckoutInformacoes()
 checkout_final = CheckoutFinal()
 comprafinalizada_checkout_finalizado = CompraFinalizada()
 
+
 @given(u'que acesso o site do saucedemo / swaglabs')
 def step_impl(context):
     utils.acessar('https://www.saucedemo.com/')
