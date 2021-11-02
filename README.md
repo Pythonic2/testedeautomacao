@@ -27,16 +27,14 @@ foi desenvolvido com ambiente virtual venv com as bibliotecas ja instaladas e se
 
 
 # como utilizar:
-Crie um novo projeto no pycharm para ter um ambiente virtual, venv.
-Depois, copie todos os arquivos deste teste de automação para seu novo projeto e execute o seguinte comando:
+Clone o repositório, execute o seguinte comando:
 
-pip install -r requirements.txt    para instalar os requisitos do sistema
+pip install -r requirements.txt ,    para instalar os requisitos do sistema
 
 Após o Ambiente configurado corretamente execute este comando:
 
 behave --tags=@compra
 
-(caso as dependencias n sejam instaladas, segue arquivo requiriments.txt com todas que foram utilizadas)
 
 
 
