@@ -10,5 +10,5 @@ class HeaderPageElements(object):
 
 class CarrinhoCompas(ChromeAuto):
     def clicar_carrinho_compras(self):
-        utils.espera('shopping_cart_link')
+        utils.espera(HeaderPageElements.CARRINHO_COMPRAS)
         self.chrome.find_element_by_css_selector(HeaderPageElements.CARRINHO_COMPRAS).click()

@@ -11,7 +11,7 @@ class Utiuls(ChromeAuto):
 
     def espera(self, elemento):
         wait = WebDriverWait(self.chrome, 10)
-        element = wait.until(EC.presence_of_element_located((By.CLASS_NAME, elemento)))
+        element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, elemento)))
         element.click()
 
 
